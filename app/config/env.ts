@@ -1,0 +1,1 @@
+export const BACKEND_API_SERVER = "http://localhost:3500"

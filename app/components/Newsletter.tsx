@@ -22,9 +22,9 @@ const Newsletter = () => {
          </form>
          <div className="flex flex-row mt-8 justify-around items-center ">
           <h3>Find us on:</h3>
-          <button className="p-2 border border-blue-500 rounded-full ml-2" ><FaFacebookF style={{color:'blue'}} /></button>
-          <button className="p-2 border border-blue-300 rounded-full ml-2" ><FaTwitter style={{color:'skyblue'}} /></button>
-          <button className="p-2 border border-red-700 rounded-full ml-2" ><FaInstagram style={{color:'red'}} /></button>
+          <span className="p-2 border border-blue-500 rounded-full ml-2" ><FaFacebookF style={{color:'blue'}} /></span>
+          <span className="p-2 border border-blue-300 rounded-full ml-2" ><FaTwitter style={{color:'skyblue'}} /></span>
+          <span className="p-2 border border-red-700 rounded-full ml-2" ><FaInstagram style={{color:'red'}} /></span>
          </div>
         </div>
       </div>

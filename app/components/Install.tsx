@@ -16,12 +16,12 @@ const Install = () => {
           <br />
           <br />
         <div className='flex flex-row cursor-pointer' >
-        <Image src={appStore} className='mr-4 border border-white rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-110' alt=""  />
-        <Image src={appStore} className='mr-4 border border-white rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-110' alt="" />
+        <Image src={appStore} className='mr-4 border border-white rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-110' alt="playstore"  />
+        <Image src={appStore} className='mr-4 border border-white rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-110' alt="appstore" />
         </div>
         </div>
         <div className="flex flex-1 justify-end ">
-          <Image src={installHero} className='w-[320px] h-[320px] xxs:pb-12 lg:pb-0 ' alt=""  height='30' width='30' />
+          {/* <Image src={installHero} className='w-[320px] h-[320px] xxs:pb-12 lg:pb-0 ' alt="installhero"  height='30' width='30' /> */}
         </div>
       </div>
     </div>

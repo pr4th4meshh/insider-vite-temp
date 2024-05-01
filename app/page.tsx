@@ -1,39 +1,38 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Categories from './components/Categories'
-import Featured from './components/Featured'
-import Genre from './components/Genre'
-import Movies from './components/Movies'
-import Courses from './components/Courses'
-import Theatres from './components/Theatres'
-import Health from './components/Health'
-import Games from './components/Games'
-import Events from './components/Events'
-import Magazine from './components/Magazine'
-import Newsletter from './components/Newsletter'
-import Install from './components/Install'
-import Artists from './components/Artists'
-import HeroCarousel from './components/HeroCarousel'
-
-const inter = Inter({ subsets: ['latin'] })
+// import Categories from './components/Categories'
+// import Genre from "./components/Genre"
+const HeroCarousel = dynamic(() => import('./components/HeroCarousel'))
+const Featured = dynamic(() => import('./components/Featured'))
+const Movies = dynamic(() => import('./components/Movies'))
+const Courses = dynamic(() => import('./components/Courses'))
+const Theatres = dynamic(() => import('./components/Theatres'))
+const Health = dynamic(() => import('./components/Health'))
+const Games = dynamic(() => import('./components/Games'))
+const Events = dynamic(() => import('./components/Events'))
+const Magazine = dynamic(() => import('./components/Magazine'))
+const Newsletter = dynamic(() => import('./components/Newsletter'))
+const Install = dynamic(() => import('./components/Install'))
+const Artists = dynamic(() => import('./components/Artists'))
+import dynamic from 'next/dynamic'
 
 export default function Home() {
   return (
-    <main>
-     <HeroCarousel/>
-        {/* <Categories/> */}
-        <Featured/>
-        <Genre/>
-        <Movies/>
-      <Courses/>
-        <Theatres/>
-        <Health/>
-        <Games/>
-        <Events/>
-        <Magazine/>
-        <Artists/>
-        <Newsletter/>
-        <Install/>
-    </main>
+    <>
+      {/* <HeroCarousel /> */}
+      <main>
+        {/* <Categories /> */}
+        <Featured />
+        {/* <Genre /> */}
+        <Movies />
+        <Courses />
+        <Theatres />
+        <Health />
+        <Games />
+        <Events />
+        <Magazine />
+        <Artists />
+        <Newsletter />
+        <Install />
+      </main>
+    </>
   )
 }
